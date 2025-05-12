@@ -14,16 +14,11 @@ public class LoginPage {
     }
 
     private By usernameFieldLocator = By.xpath("//label[normalize-space()='Username*']/parent::div//input");
-    //label[normalize-space()='Username*']/parent::div//input
-
-            //"//label[normalize-space()='Username*']/following-sibling::input");
 
     private By passwordFieldLocator = By.xpath(
             "//label[normalize-space()='Password*']/parent::div//input");
 
     private By loginButtonLocator = By.xpath("//button[@type='submit']//span[normalize-space()='Login']");
-    //button[@type='submit']//span[normalize-space()='Login']
-
 
     public WebElement getUserNameElement(){
         return WaitUtils.waitForPresenceOfElementByLocator(driver, usernameFieldLocator, 10);
@@ -35,10 +30,7 @@ public class LoginPage {
     }
 
     public WebElement gePasswordElement(){
-      /*  WebElement usernameField = new WebDriverWait(driver, Duration.ofSeconds(10))
-                .until(ExpectedConditions.visibilityOfElementLocated(usernameFieldLocator));*/
         return WaitUtils.waitForPresenceOfElementByLocator(driver, passwordFieldLocator, 10);
-        //return usernameField;
     }
     public void enterPassword(String password){
         gePasswordElement().click();

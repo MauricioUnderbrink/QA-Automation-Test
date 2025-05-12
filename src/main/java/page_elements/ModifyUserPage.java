@@ -129,7 +129,4 @@ private WebDriver driver;
         getModifyClosePageElement().click();
     }
 
-
-
-
 }
