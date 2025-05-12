@@ -1,11 +1,8 @@
 package page_elements;
-
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import testcoreutils.WaitUtils;
-
-import javax.swing.text.Utilities;
 import java.time.Duration;
 
 public class ToastMessages {

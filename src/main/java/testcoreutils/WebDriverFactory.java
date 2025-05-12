@@ -34,14 +34,7 @@ public class WebDriverFactory {
             default:
                 throw new IllegalArgumentException("Unsupported browser: " + browser);
         }
-
         return driver;
-
     }
-
-
-
-
-
 
 }
