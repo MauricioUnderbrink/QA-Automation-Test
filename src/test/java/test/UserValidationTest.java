@@ -107,7 +107,6 @@ public class UserValidationTest extends BaseTest {
         usersListPage.clickNameButtonFromList();
         Assert.assertFalse(modifyUserPage.getModifyAdminCheckboxElement().isSelected());
         modifyUserPage.clickModifyCancelButton();
-        //usersListPage.clickClearFilterButton();
     }
 
     /**
