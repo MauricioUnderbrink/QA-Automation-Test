@@ -42,8 +42,6 @@ public class AddUserPage {
 
    private By closePageLocator = By.cssSelector("button[id='btn-closeAddUser'] span[class='v-btn__content'] svg");
 
-   private By alertErrorMessageLocator = By.xpath("//div[@data-testid='toast-content' and contains(., 'Email is already in use')]");
-
    public WebElement getAddUserMainPageWindowElement() {
       return WaitUtils.waitForPresenceOfElementByLocator(driver, addUserMainPageWindowLocator, 10);
    }
@@ -151,16 +149,5 @@ public class AddUserPage {
       getClosePageElement().click();
    }
 
-
-   public WebElement getAlertMessageElement(){
-      return WaitUtils.waitForPresenceOfElementByLocator(driver, alertErrorMessageLocator, 5);
-   }
-
-   public String getAlertMessageText(){
-   return   getAlertMessageElement().getText();
-   }
-   public void clickAlertMessage(){
-      getAlertMessageElement().click();
-   }
 
 }
